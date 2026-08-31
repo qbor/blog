@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <p class="eyebrow">PERSONAL JOURNAL</p>
+            <h1>我的个人博客</h1>
+            <p>记录生活、灵感与正在学习的新东西。</p>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a class="nav-link active" href="#home">首页</a></li>
+            <li><a class="nav-link" href="#articles">文章</a></li>
+            <li><a class="nav-link" href="#media">影音</a></li>
+            <li><a class="nav-link" href="#about">关于我</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="切换深色模式">深色模式</button>
+    </nav>
+    <main class="main-content" id="home">
+        <section class="intro-section" aria-labelledby="intro-title">
+            <div>
+                <p class="section-label">HELLO, WORLD</p>
+                <h2 id="intro-title">把日常写成值得回看的故事</h2>
+                <p>这里是我的数字角落，分享学习记录、生活片段和让我停下来思考的瞬间。</p>
+            </div>
+            <a class="primary-link" href="#articles">浏览文章 <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section class="articles-section" id="articles" aria-labelledby="articles-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">LATEST NOTES</p>
+                    <h2 id="articles-title">最近的文章</h2>
+                </div>
+                <span class="article-count">03 篇记录</span>
+            </div>
+            <div class="article-grid">
+                <article class="post-card">
+                    <p class="post-date">2026年8月25日 · 生活</p>
+                    <h3>我的第一篇博客</h3>
+                    <p>从一个简单的页面开始，记录我搭建个人博客时遇到的想法与收获。</p>
+                    <a href="#about">继续阅读 <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="post-card">
+                    <p class="post-date">2026年8月20日 · 学习</p>
+                    <h3>今天学会了什么</h3>
+                    <p>把每天的新知识整理下来，让进步变得清晰可见。</p>
+                    <a href="#about">继续阅读 <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="post-card">
+                    <p class="post-date">2026年8月12日 · 灵感</p>
+                    <h3>让网页更有温度</h3>
+                    <p>关于颜色、文字和交互如何一起构成一个舒服的浏览体验。</p>
+                    <a href="#about">继续阅读 <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="media-section" id="media" aria-labelledby="media-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">NOW PLAYING</p>
+                    <h2 id="media-title">我的影音角落</h2>
+                </div>
+            </div>
+            <div class="video" id="daoshu">
+            <video class="video-player" controls muted autoplay loop>
+                <source src="./video&music&picture/G.E.M. 邓紫棋 - 倒数.mp4" type="video/mp4">
+            </video>
+            </div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <p class="section-label">A LITTLE ABOUT ME</p>
+            <h2 id="about-title">保持好奇，持续创作。</h2>
+            <p>我正在学习前端开发，也在用这个博客收藏沿途的风景。欢迎常来看看。</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2026</span> 我的个人博客 · 用心记录每一天</p>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
